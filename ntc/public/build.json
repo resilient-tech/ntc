@@ -1,5 +1,6 @@
 {
 	"js/ntc.min.js": [
+		"public/js/utils.js",
 		"public/js/cancel_and_edit.js"
 	]
 }
