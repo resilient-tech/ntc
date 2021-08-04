@@ -14,7 +14,7 @@ app_license = "(c) 2021 Resilient Tech. All Rights Reserved."
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/ntc/css/ntc.css"
-# app_include_js = "/assets/ntc/js/ntc.js"
+app_include_js = "/assets/js/ntc.min.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/ntc/css/ntc.css"
@@ -44,7 +44,7 @@ app_license = "(c) 2021 Resilient Tech. All Rights Reserved."
 
 # website user home page (by Role)
 # role_home_page = {
-#	"Role": "home_page"
+# 	"Role": "home_page"
 # }
 
 # Generators
@@ -94,7 +94,7 @@ app_license = "(c) 2021 Resilient Tech. All Rights Reserved."
 # 		"on_update": "method",
 # 		"on_cancel": "method",
 # 		"on_trash": "method"
-#	}
+# 	}
 # }
 
 # Scheduled Tasks
@@ -146,24 +146,22 @@ app_license = "(c) 2021 Resilient Tech. All Rights Reserved."
 # --------------------
 
 user_data_fields = [
-	{
-		"doctype": "{doctype_1}",
-		"filter_by": "{filter_by}",
-		"redact_fields": ["{field_1}", "{field_2}"],
-		"partial": 1,
-	},
-	{
-		"doctype": "{doctype_2}",
-		"filter_by": "{filter_by}",
-		"partial": 1,
-	},
-	{
-		"doctype": "{doctype_3}",
-		"strict": False,
-	},
-	{
-		"doctype": "{doctype_4}"
-	}
+    {
+        "doctype": "{doctype_1}",
+        "filter_by": "{filter_by}",
+        "redact_fields": ["{field_1}", "{field_2}"],
+        "partial": 1,
+    },
+    {
+        "doctype": "{doctype_2}",
+        "filter_by": "{filter_by}",
+        "partial": 1,
+    },
+    {
+        "doctype": "{doctype_3}",
+        "strict": False,
+    },
+    {"doctype": "{doctype_4}"},
 ]
 
 # Authentication and authorization
@@ -172,4 +170,3 @@ user_data_fields = [
 # auth_hooks = [
 # 	"ntc.auth.validate"
 # ]
-
